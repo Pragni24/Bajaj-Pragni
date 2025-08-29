@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 @app.route('/bfhl', methods=['POST'])
+def bfhl():
     try:
         input_data = request.get_json()["data"]
         full_name = "pragni_naik"
